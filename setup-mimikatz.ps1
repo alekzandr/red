@@ -3,6 +3,8 @@ $url = "https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20200715/
 $output = "$PSScriptRoot\mimikatz.zip"
 
 Invoke-WebRequest -Uri $url -OutFile $output
+
+Expand-Archive .\mimikatz.zip
 Write-Output "Mimikatz downloaded"
 
 
